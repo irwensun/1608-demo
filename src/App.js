@@ -5,9 +5,11 @@ import NavFooter from './component/NavFooter';
 class App extends React.Component {
   render () {
     return(
-      <div>
+      <div className="my-wrap">
       <NavHeader />
+      <div className="main">
       {this.props.children}
+      </div>
       <NavFooter />
       </div>
     )

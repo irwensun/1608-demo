@@ -1,0 +1,58 @@
+.btn-default:active:focus,.btn-default:active:hover{
+  background-color: rgba(0,0,0,0.5);
+
+}
+.btn:active:facus,btn:facus{
+  outline: none;
+}
+.my-wrap{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.Nav-Header{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  height:80px;
+  background-color: #cfc;
+  padding: 0 5px;
+  flex-shrink: 0;
+}
+.Nav-Header h3{
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+}
+.Nav-Header button{
+  padding: 10px 12px;
+  color: #fff；currentColor;
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  border-radius: 8px
+
+}
+.nav-footer{
+  flex-shrink: 0;
+  height: 80px;
+  background-color: #cfc;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.nav-footer a{
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  border-right: 1px solid #000;
+  flex-grow: 1;
+
+}
+.nav-footer a:last-child{
+  border: none;
+}
+.main{
+  flex-grow: 1;
+  overflow-y: scroll;
+}
