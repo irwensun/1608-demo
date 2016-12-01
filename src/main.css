@@ -55,4 +55,51 @@
 .main{
   flex-grow: 1;
   overflow-y: scroll;
+  display: flex;
+}
+.home-wrap{
+  flex-grow: 1;
+  background-image: url(./img/timg.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+}
+.home-cover{
+  flex-grow: 1;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+}
+.home-item{
+ text-align: center;
+ color:#fff;
+ margin: 0 auto;
+}
+.about-wrap{
+  flex-grow: 1;
+  padding: 10px 10px;
+}
+.git-card{
+  width: 100%;
+  border: 1px solid rgba(0,0,0,0.12);
+  box-shadow: rgba(0,0,0,0.3) 3px 3px 6px;
+  text-align: center;
+}
+.git-card h2{
+  margin: 0;
+  color: #00bcd4;
+}
+.about-form{
+  display: inline;
+  width: 70%;
+  max-width: 560px;
+
+}
+.show-git{
+  display: flex;
+  box-shadow: rgba(0,0,0,0.3) 3px 3px 6px;
+  justify-content:space-around;
+  color:teal;
+  font-size: 10px;
+  padding: 10px 0;
 }
