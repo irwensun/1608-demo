@@ -6,5 +6,6 @@ import App from './App.js';
 import Routers from './routers.js';
 import "./main.css"
 import "./post.css"
+import "highlight.js/styles/default.css"
 
 render(<Routers />,document.getElementById('root'));

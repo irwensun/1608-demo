@@ -1,6 +1,7 @@
 import React from "react";
 import marked from "marked"
 import axios from "axios"
+import hljs from "highlight.js"
 import Loading from "../component/loading"
 class Item extends React.Component{
   constructor(){
@@ -15,6 +16,11 @@ class Item extends React.Component{
     .then( res => this.setState({data:res.data}))
   }
   render(){
+          marked.setOptions({
+              highlight: function (code) {
+              return hljs.highlightAuto(code).value;
+        }
+   });
     return(
       <div>
       {this.state.data.length==0? <Loading /> :<div className="post-wrap" dangerouslySetInnerHTML={{__html:marked(this.state.data)}}/> }
